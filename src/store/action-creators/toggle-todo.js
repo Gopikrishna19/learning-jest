@@ -1,7 +1,7 @@
 import {TOGGLE_TODO} from '../actions';
 
-export const toggleTodo = (index, finished) => ({
+export const toggleTodo = (id: string, finished: boolean) => ({
     finished,
-    index,
+    id,
     type: TOGGLE_TODO
 });
