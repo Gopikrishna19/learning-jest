@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "build": "webpack",
-        "build:watch": "webpack --watch-stdin",
+        "build:watch": "webpack --watch-stdin --mode development",
         "test": "jest"
     },
     "repository": {
