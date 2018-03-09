@@ -4,8 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "webpack",
-        "build:watch": "webpack --watch-stdin --mode development",
+        "build": "rimraf dist && webpack",
+        "build:watch": "rimraf dist && webpack --watch-stdin --mode development",
         "test": "jest"
     },
     "repository": {
@@ -25,9 +25,15 @@
         "babel-preset-env": "1.6.1",
         "babel-preset-react": "6.24.1",
         "babel-preset-stage-2": "6.24.1",
+        "css-loader": "0.28.10",
+        "extract-text-webpack-plugin": "3.0.2",
         "flow-bin": "0.67.1",
         "html-webpack-plugin": "3.0.6",
         "jest": "22.4.2",
+        "node-sass": "4.7.2",
+        "rimraf": "2.6.2",
+        "sass-loader": "6.0.7",
+        "style-loader": "0.20.3",
         "webpack": "4.1.1",
         "webpack-cli": "2.0.10"
     },

@@ -12,7 +12,22 @@ module.exports = {
             {
                 test: /.js$/,
                 exclude: /node_modules/,
-                loader: 'babel-loader?sourceMap'
+                loader: 'babel-loader'
+            },
+            {
+                test: /.s?css$/,
+                exclude: /node_modules/,
+                loader: [
+                    'style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            localIdentName: '[name]-[local]-[hash:base64:5]',
+                            modules: true
+                        }
+                    },
+                    'sass-loader'
+                ]
             }
         ]
     },

@@ -1,0 +1,19 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    $list: link visited active hover;
+    color: inherit;
+
+    @each $state in $list {
+        &:#{$state} {
+            color: inherit;
+        }
+    }
+}
