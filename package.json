@@ -15,5 +15,23 @@
   "bugs": {
     "url": "https://github.com/Gopikrishna19/learning-jest/issues"
   },
-  "homepage": "https://github.com/Gopikrishna19/learning-jest#readme"
+  "homepage": "https://github.com/Gopikrishna19/learning-jest#readme",
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-loader": "7.1.4",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-react": "6.24.1",
+    "flow-bin": "0.67.1",
+    "html-webpack-plugin": "3.0.6",
+    "jest": "22.4.2",
+    "webpack": "4.1.1",
+    "webpack-dev-server": "3.1.0"
+  },
+  "dependencies": {
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-redux": "5.0.7",
+    "redux": "3.7.2"
+  }
 }
