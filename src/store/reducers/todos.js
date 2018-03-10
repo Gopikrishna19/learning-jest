@@ -11,8 +11,6 @@ const replaceTodo = function (state, id, patch) {
         clone.splice(index, 1)
     }
 
-    console.log(clone);
-
     return clone;
 };
 

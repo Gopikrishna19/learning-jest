@@ -10,7 +10,6 @@ export const Todo = props =>
             onChange={handleChange(props)}
             checked={props.todo.finished}
             type='checkbox'
-            
         />
         {props.todo.todo}
         <button onClick={props.onRemove}>Remove</button>
