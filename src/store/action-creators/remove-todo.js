@@ -1,7 +1,7 @@
-// @flow
 import {REMOVE_TODO} from '../actions';
+import {logger} from '../logger';
 
-export const removeTodo = (id: string) => ({
+export const removeTodo = logger((id: string) => ({
     id,
     type: REMOVE_TODO
-});
+}));
