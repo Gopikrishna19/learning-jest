@@ -4,8 +4,15 @@ import {todoFinished} from './todo.scss';
 
 const handleChange = props => () => props.onToggle(!props.todo.finished);
 
+const getClassNames = props => [
+    'todo',
+    props.todo.finished ? todoFinished : ''
+]
+    .filter(name => name)
+    .join(' ');
+
 export const Todo = props =>
-    <div className={`todo ${props.todo.finished ? todoFinished : ''}`}>
+    <div className={getClassNames(props)}>
         <input
             onChange={handleChange(props)}
             checked={props.todo.finished}
